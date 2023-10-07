@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 100px;
+    align-items: center;
+    z-index: 999;
+}
+header h1 a{
+    text-decoration: none;
+    color: rgb(76, 132, 76);
+    margin-right: 270px;
+}
+header nav ul{
+    display: flex;
+}
+header nav ul li{
+    padding: 20px;
+    list-style: none;
+}
+header nav ul li a{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: rgb(76, 132, 76);
+    border-radius: 15px;
+}
+header nav ul li a:hover{
+    background-color:  rgb(76, 132, 76);
+    color: antiquewhite;
+}
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#first_text{
+    position: absolute;
+    font-size: 90px;
+    color: antiquewhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.parallax img{
+    position: absolute;
+    width: 100%;
+}
+.parallax_sec{
+    position: relative;
+    background-color: #003329;
+    padding: 100px;
+}
+.parallax_sec h1{
+    color: antiquewhite;
+    margin-bottom: 15px;
+}
+.parallax_sec p{
+    color: antiquewhite;
+}
+@media only screen and (max-width: 600px){
+    header{
+        padding: 10px 50px;
+    }
+    header h1{
+        font-size: 25px;
+        margin-right: 10px;
+    }
+    header ul li a{
+        font-size: 15px;
+    }
+    .parallax{
+        position: relative;
+        width: 820px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    #first_text{
+        font-size: 55px;
+    }
+    .parallax_sec{
+        width: 820px;
+    }
+}
